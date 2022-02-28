@@ -1,8 +1,8 @@
-let noteTitle;
-let noteText;
-let saveNoteBtn;
-let newNoteBtn;
-let noteList;
+let noteTitle = document.getElementsByClassName("note-title");
+let noteText = document.getElementsByClassName("note-textarea");
+let saveNoteBtn = document.getElementsByClassName("save-note");
+let newNoteBtn = document.getElementsByClassName("new-note");
+let noteList = document.getElementsByClassName("list-group");
 
 if (window.location.pathname === '/notes') {
   noteTitle = document.querySelector('.note-title');
