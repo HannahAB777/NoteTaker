@@ -10,7 +10,7 @@ router.get('/api/notes', (req, res) => {
     //collect the data from that file
     const notesdata = JSON.parse(fs.readFileSync(notesdatapath, "utf-8")|| "");
     //return the the content as a JSON
-    res.JSON(notesdata);
+    res.json(notesdata);
 });
 
 module.exports = router;
