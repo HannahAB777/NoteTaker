@@ -6,7 +6,7 @@ const fs = require('fs');
 const uuid = require('uuid');
 const { json } = require('express');
 //find the db.json file
-const notesdatapath = path.join(__dirname, "../db/db.json"); 
+const notesdatapath = require("../db/db.json"); 
 
 /**
  * @returns {array}
@@ -14,7 +14,7 @@ const notesdatapath = path.join(__dirname, "../db/db.json");
 
 function retrieveNotes(){
     //collect the data from that file
-    fs.readFileSync(notesdatapath, "utf-8");
+    return notesdatapath;
 }
 
 router.get('/api/notes', (req, res) => {
@@ -34,7 +34,7 @@ router.post('/api/notes', (req, res) => {
 };
   const currentNotes = retrieveNotes();
   currentNotes.push(newNote);
-  fs.writeFileSync(notesdatapath, JSON.stringify(currentNotes),"utf-8");
+  fs.writeFileSync(path.join(__dirname, '../db/db.json'), JSON.stringify(currentNotes),"utf-8");
 
   res.json = newNote;
 
