@@ -12,7 +12,10 @@ router.get('/notes', (req, res) => {
     res.sendFile(noteshtml);
 });
 
-
+router.get('*', (req, res) => {
+    const landinghtml = path.join(__dirname, "..", "public", "index.html");
+    res.sendFile(landinghtml);
+});
 
 
 
