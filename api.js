@@ -5,7 +5,7 @@ const fs = require('fs');
 const uuid = require('uuid');
 const { json } = require('express');
 //find the db.json file
-const notesdatapath = require("../db/db.json"); 
+const notesdatapath = require("./db/db.json"); 
 
 /**
  * @returns {array}
