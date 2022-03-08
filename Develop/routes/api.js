@@ -22,30 +22,32 @@ router.get('/api/notes', (req, res) => {
     res.json(notes);
 });
 
+
 router.post('/api/notes', (req, res) => {
+  //
   const {title, text} = req.body;
   console.log(title + text);
 
   const newNote = {
-    id: uuid,
+    id: uuid.v4(),
     title,
     text,
 };
   const currentNotes = retrieveNotes();
   currentNotes.push(newNote);
   fs.writeFileSync(path.join(__dirname, '../db/db.json'), JSON.stringify(currentNotes),"utf-8");
-  res.json = newNote;
+  res.json(newNote);
 
 });
 
-router.delete('api/notes/:id', (req, res) => {
+router.delete('/api/notes/:id', (req, res) => {
   const notes = retrieveNotes();
   const idFilter = notes.filter((notes) => notes.id !== req.params.id);
   fs.writeFileSync(path.join(__dirname, '../db/db.json'), JSON.stringify(idFilter),"utf-8");
 
-  res.json = {
-    data: "ok"
-  };
+  res.json({
+    "data": "ok"}
+);
 });
 
 module.exports = router;
