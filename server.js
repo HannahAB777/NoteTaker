@@ -5,7 +5,9 @@ const apiRoutes = require('./api');
 
 const PORT = process.env.PORT||5001;
 //creating a port and middleware
-app.use(express.static('./public')); //making all files in public available
+app.use(express.static('./public'));
+ //making all files in public available
+app.use(express.static('./NOTETAKER'));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(apiRoutes);
