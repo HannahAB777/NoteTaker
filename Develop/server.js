@@ -4,8 +4,8 @@ const webRoutes = require('./routes/web');
 const apiRoutes = require('./routes/api');
 
 const PORT = process.env.PORT||5001;
-
-app.use(express.static('./public'));
+//creating a port and middleware
+app.use(express.static('./public')); //making all files in public available
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(apiRoutes);
