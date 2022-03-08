@@ -36,7 +36,7 @@ router.post('/api/notes', (req, res) => {
 //pushing the new note to the database and saving the database
   const currentNotes = retrieveNotes();
   currentNotes.push(newNote);
-  fs.writeFileSync(path.join(__dirname, '../db/db.json'), JSON.stringify(currentNotes),"utf-8");
+  fs.writeFileSync(path.join(__dirname, './db/db.json'), JSON.stringify(currentNotes),"utf-8");
   res.json(newNote);
 
 });
@@ -44,7 +44,7 @@ router.post('/api/notes', (req, res) => {
 router.delete('/api/notes/:id', (req, res) => {
   const notes = retrieveNotes();
   const idFilter = notes.filter((notes) => notes.id !== req.params.id);
-  fs.writeFileSync(path.join(__dirname, '../db/db.json'), JSON.stringify(idFilter),"utf-8");
+  fs.writeFileSync(path.join(__dirname, './db/db.json'), JSON.stringify(idFilter),"utf-8");
 
   res.json({
     "data": "ok"}
