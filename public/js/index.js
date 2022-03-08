@@ -4,6 +4,7 @@ let saveNoteBtn = document.getElementsByClassName("save-note");
 let newNoteBtn = document.getElementsByClassName("new-note");
 let noteList = document.getElementsByClassName("list-group");
 
+console.log("this file is running");
 if (window.location.pathname === '/notes') {
   noteTitle = document.querySelector('.note-title');
   noteText = document.querySelector('.note-textarea');
