@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
-const webRoutes = require('./routes/web');
-const apiRoutes = require('./routes/api');
+const webRoutes = require('./public/web');
+const apiRoutes = require('./public/api');
 
 const PORT = process.env.PORT||5001;
 //creating a port and middleware
