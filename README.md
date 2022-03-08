@@ -18,7 +18,7 @@ Hannah Allison-Batt
 | Table of Contents|
 | ----------- |
 |[Installation](#installation) |
-|[description] (#description)|
+|[description](#description)|
 |[Usage](#usage)|
 |[Credits](#credits)|
 |[License](#license)|
