@@ -2,7 +2,12 @@
 An app to keep track of tasks
 
 # Description
-keep track of a busy schedule with a note taking app that saves and stores your tasks. when you open the app
+keep track of a busy schedule with a note taking app that saves and stores your tasks. when you open the app you are presented with the landing page below:
+![image](https://user-images.githubusercontent.com/93077324/157420660-7ae1366c-bbb3-41ce-8114-e875a977825a.png)
+when you click "get started"
+you are presented with the following notes page:
+![image](https://user-images.githubusercontent.com/93077324/157421152-9c1f09d2-22b0-4c3f-b02a-3d4547d2fe1f.png)
+on the right hand side you can eneter notes and their title, and save and store them in the directory in the left. to access the notes you simply click where they are in the directory and to delete the notes, simply click the trash icon in the corner of each note.
 
 # Authors
 Hannah Allison-Batt
@@ -33,7 +38,7 @@ Hannah Allison-Batt
   ## Usage
 
   you can use the app itself from this link
-  [https://hannahab777.github.io/NoteTaker/](https://hannahab777.github.io/NoteTaker/)
+  [https://hannah-a-b-notetaker.herokuapp.com/](https://hannah-a-b-notetaker.herokuapp.com/)
   
   ## Credits
 
