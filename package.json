@@ -13,9 +13,6 @@
     "express": "^4.16.4",
     "uuid": "^8.3.2"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/HannahAB777/NoteTaker.git"
